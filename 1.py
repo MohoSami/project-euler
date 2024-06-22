@@ -1,10 +1,8 @@
-def sum_multiples_of_3_and_5(limit):
-    total = 0
-    for num in range(1, limit):
-        if num % 3 == 0 or num % 5 == 0:
-            total += num
-    return total
+def p1():
+    sum = 0
+    for i in range(1000):
+        if i % 3 == 0 or i % 5 == 0:
+            sum = sum + i
+    return sum
 
-# Call the function with the limit of 1000
-result = sum_multiples_of_3_and_5(1000)
-print(result)
+print(p1())
